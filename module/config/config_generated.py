@@ -24,6 +24,8 @@ class GeneratedConfig:
     Emulator_ControlMethod = 'MaaTouch'  # minitouch, MaaTouch
     Emulator_CloudPriorQueue = False
     Emulator_AdbRestart = False
+    Emulator_AutoUpdateGame = False
+    Emulator_GameUpdateCheckMinutes = 360
 
     # Group `EmulatorInfo`
     EmulatorInfo_Emulator = 'auto'  # auto, NoxPlayer, NoxPlayer64, BlueStacks4, BlueStacks5, BlueStacks4HyperV, BlueStacks5HyperV, LDPlayer3, LDPlayer4, LDPlayer9, LDPlayer14, MuMuPlayer, MuMuPlayerX, MuMuPlayer12, MEmuPlayer
@@ -35,6 +37,10 @@ class GeneratedConfig:
     Error_SaveError = True
     Error_ScreenshotLength = 1
     Error_OnePushConfig = 'provider: null'
+    Error_NotRunningAlert = False
+    Error_NotRunningGraceMinutes = 30
+    Error_NotRunningRepeatMinutes = 1440
+    Error_NotRunningTasks = None
 
     # Group `Optimization`
     Optimization_ScreenshotInterval = 0.3

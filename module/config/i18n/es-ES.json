@@ -157,6 +157,14 @@
     "AdbRestart": {
       "name": "Intentar reiniciar el ADB cuando no se encuentre ninguno.",
       "help": ""
+    },
+    "AutoUpdateGame": {
+      "name": "Automatically update game APK",
+      "help": "Linux, official CN Android only. Check before game launch; resumes downloads and verifies Android package signature. Other channels are skipped."
+    },
+    "GameUpdateCheckMinutes": {
+      "name": "Game update check interval (minutes)",
+      "help": "Successful checks are shared per device. 0 checks on every launch."
     }
   },
   "EmulatorInfo": {
@@ -214,6 +222,22 @@
     "OnePushConfig": {
       "name": "Configuración para notificar errores",
       "help": "Cuando SRC no puede manejar un error, envía un mensaje automáticamente. Puedes leer más información sobre este ajuste aquí:\nhttps://github.com/LmeSzinc/AzurLaneAutoScript/wiki/Onepush-configuration-%5BEN%5D"
+    },
+    "NotRunningAlert": {
+      "name": "Remind when scheduler is stopped",
+      "help": "Opt in to reminders for this profile, including manual stops and crashes. Uses the existing OnePush configuration; GUI must remain running."
+    },
+    "NotRunningGraceMinutes": {
+      "name": "Stopped reminder grace (minutes)",
+      "help": "How long the scheduler may remain stopped before sending a reminder."
+    },
+    "NotRunningRepeatMinutes": {
+      "name": "Stopped reminder repeat (minutes)",
+      "help": "Repeat until the scheduler runs again. Minimum 1 minute."
+    },
+    "NotRunningTasks": {
+      "name": "Watch disabled tasks",
+      "help": "Optional comma-separated task IDs, e.g. Dungeon,DailyQuest. Only explicitly listed disabled tasks trigger reminders; empty disables task monitoring."
     }
   },
   "Optimization": {

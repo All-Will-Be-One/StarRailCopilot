@@ -70,6 +70,14 @@
       "AdbRestart": {
         "type": "checkbox",
         "value": false
+      },
+      "AutoUpdateGame": {
+        "type": "checkbox",
+        "value": false
+      },
+      "GameUpdateCheckMinutes": {
+        "type": "input",
+        "value": 360
       }
     },
     "EmulatorInfo": {
@@ -124,6 +132,23 @@
         "type": "textarea",
         "value": "provider: null",
         "mode": "yaml"
+      },
+      "NotRunningAlert": {
+        "type": "checkbox",
+        "value": false
+      },
+      "NotRunningGraceMinutes": {
+        "type": "input",
+        "value": 30
+      },
+      "NotRunningRepeatMinutes": {
+        "type": "input",
+        "value": 1440
+      },
+      "NotRunningTasks": {
+        "type": "input",
+        "value": "",
+        "valuetype": "str"
       }
     },
     "Optimization": {

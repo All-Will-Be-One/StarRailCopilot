@@ -33,6 +33,8 @@ class AppControl(Adb, WSA, Uiautomator2):
         return package == self.package
 
     def app_start(self):
+        from module.device.game_update import update_game
+        update_game(self)
         method = self.config.Emulator_ControlMethod
         logger.info(f'App start: {self.package}')
         if self.config.Emulator_Serial == 'wsa-0':

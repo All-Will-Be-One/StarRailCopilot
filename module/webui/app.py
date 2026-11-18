@@ -1318,6 +1318,8 @@ def startup():
     if updater.delay > 0:
         task_handler.add(updater.check_update, updater.delay)
     task_handler.add(updater.schedule_update(), 86400)
+    from module.webui.inactive_alert import InactiveMonitor
+    task_handler.add(InactiveMonitor().check, 60)
     task_handler.start()
     # if State.deploy_config.DiscordRichPresence:
     #     init_discord_rpc()

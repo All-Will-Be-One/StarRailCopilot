@@ -47,6 +47,8 @@ Emulator:
     option: [ minitouch, MaaTouch ]
   CloudPriorQueue: false
   AdbRestart: false
+  AutoUpdateGame: false
+  GameUpdateCheckMinutes: 360
 EmulatorInfo:
   Emulator:
     value: auto
@@ -83,6 +85,12 @@ Error:
     type: textarea
     mode: yaml
     value: 'provider: null'
+  NotRunningAlert: false
+  NotRunningGraceMinutes: 30
+  NotRunningRepeatMinutes: 1440
+  NotRunningTasks:
+    value: ''
+    valuetype: str
 Optimization:
   ScreenshotInterval: 0.3
   CombatScreenshotInterval: 1.0

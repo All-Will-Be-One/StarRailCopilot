@@ -1,4 +1,5 @@
 ### AzurLaneAutoScript
+cache/
 log
 config/backup/*
 config/*.ini

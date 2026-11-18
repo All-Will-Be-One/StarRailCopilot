@@ -8,7 +8,9 @@
       "ScreenshotMethod": "scrcpy",
       "ControlMethod": "MaaTouch",
       "CloudPriorQueue": false,
-      "AdbRestart": false
+      "AdbRestart": false,
+      "AutoUpdateGame": false,
+      "GameUpdateCheckMinutes": 360
     },
     "EmulatorInfo": {
       "Emulator": "auto",
@@ -19,7 +21,11 @@
       "Restart": "game",
       "SaveError": true,
       "ScreenshotLength": 1,
-      "OnePushConfig": "provider: null"
+      "OnePushConfig": "provider: null",
+      "NotRunningAlert": false,
+      "NotRunningGraceMinutes": 30,
+      "NotRunningRepeatMinutes": 1440,
+      "NotRunningTasks": null
     },
     "Optimization": {
       "ScreenshotInterval": 0.2,

@@ -1,8 +1,8 @@
 Deploy:
   Git:
     # URL of AzurLaneAutoScript repository
-    # [CN user] Use 'cn' to get update from git-over-cdn service
-    # [Other] Use 'global' to get update from https://github.com/LmeSzinc/StarRailCopilot
+    # Maintained fork; legacy global/cn aliases also resolve to this fork.
+    # Upstream releases are merged and tested separately before publishing.
     Repository: {{repository}}
     # Branch of Alas
     # [Developer] Use 'dev', 'app', etc, to try new features

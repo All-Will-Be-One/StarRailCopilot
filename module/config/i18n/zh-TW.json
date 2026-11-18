@@ -157,6 +157,14 @@
     "AdbRestart": {
       "name": "在檢測不到設備的時候嘗試重啟adb",
       "help": ""
+    },
+    "AutoUpdateGame": {
+      "name": "自动更新游戏 APK",
+      "help": "仅 Linux 国服官方 Android 包。启动游戏前检查，断点续传，并由 Android 校验签名；其他渠道跳过。"
+    },
+    "GameUpdateCheckMinutes": {
+      "name": "游戏版本检查间隔（分钟）",
+      "help": "同一设备共享成功检查记录；0 表示每次启动都检查。"
     }
   },
   "EmulatorInfo": {
@@ -214,6 +222,22 @@
     "OnePushConfig": {
       "name": "錯誤推送設定",
       "help": "發生無法處理的異常後，使用 Onepush 推送错误消息。設定參考文檔：https://github.com/LmeSzinc/AzurLaneAutoScript/wiki/Onepush-configuration-%5BCN%5D"
+    },
+    "NotRunningAlert": {
+      "name": "未启动／停止提醒",
+      "help": "开启后，实例未启动、手动停止或異常退出都会提醒。沿用错误推送渠道，需保持网页服务运行。"
+    },
+    "NotRunningGraceMinutes": {
+      "name": "未启动提醒等待时间（分钟）",
+      "help": "停止持续多久后发送首次提醒。"
+    },
+    "NotRunningRepeatMinutes": {
+      "name": "未启动提醒重复间隔（分钟）",
+      "help": "恢复运行前按此间隔重复提醒，最短 1 分钟。"
+    },
+    "NotRunningTasks": {
+      "name": "禁用任务监控名单",
+      "help": "可选，逗号分隔内部任务名，例如 Dungeon,DailyQuest。只提醒名单中已禁用的任务，留空不监控任务开关。"
     }
   },
   "Optimization": {
